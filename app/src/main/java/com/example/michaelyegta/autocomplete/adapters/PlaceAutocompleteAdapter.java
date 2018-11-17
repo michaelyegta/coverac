@@ -1,3 +1,4 @@
+// source: https://github.com/googlesamples/android-play-places/blob/master/PlaceCompleteAdapter/Application/src/main/java/com/example/google/playservices/placecomplete/PlaceAutocompleteAdapter.java
 /*
  * Copyright (C) 2015 Google Inc. All Rights Reserved.
  *
