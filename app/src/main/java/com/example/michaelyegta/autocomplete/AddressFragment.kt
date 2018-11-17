@@ -12,7 +12,7 @@ import kotlinx.android.synthetic.main.fragment_address.*
 import com.google.android.gms.location.places.Places
 
 /**
- * A simple [Fragment] subclass.
+ * A simple [Fragment] class for Address Autocomplete.
  *
  */
 class AddressFragment : Fragment() {

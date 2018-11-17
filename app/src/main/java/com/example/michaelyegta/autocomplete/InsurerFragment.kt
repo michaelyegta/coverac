@@ -12,7 +12,7 @@ import com.example.michaelyegta.autocomplete.adapters.AutocompleteAdapter
 import com.example.michaelyegta.autocomplete.data.AutocompleteList
 
 /**
- * A simple [Fragment] subclass.
+ * A simple [Fragment] class for Insurance Carrier Autocomplete.
  *
  */
 class CarrierFragment : Fragment() {
@@ -44,6 +44,7 @@ class CarrierFragment : Fragment() {
             // checker may be more complicated, such as checking if a valid carrier is in the text
             if (insurer.isBlank()) textInputLayout.error = getString(R.string.error_reminder)
             else {
+                // clear back stack and start a new entry activity
                 val intent = Intent(context, MainActivity::class.java)
                 intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
                 startActivity(intent)
