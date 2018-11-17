@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Cover</string>
+
+    <string name="your_address">What\'s your address?</string>
+    <string name="address_hint">Please input your address</string>
+    <string name="current_insurer">Who\'s your current insurer?</string>
+    <string name="insurer_hint">Please input your insurance carrier</string>
+    <string name="error_reminder">Please select one of the options to continue</string>
+    <string name="next_button">Next</string>
+</resources>
