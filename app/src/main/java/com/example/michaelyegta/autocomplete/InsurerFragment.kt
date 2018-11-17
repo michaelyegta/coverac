@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.AdapterView
 import kotlinx.android.synthetic.main.fragment_insurer.*
 import com.example.michaelyegta.autocomplete.adapters.AutocompleteAdapter
 import com.example.michaelyegta.autocomplete.data.AutocompleteList
@@ -36,6 +37,9 @@ class CarrierFragment : Fragment() {
             }
         }
 
+        autoCompleteTextView.onItemClickListener = AdapterView.OnItemClickListener { _, _, _, _ ->
+            textInputLayout.error = ""
+        }
         val adapter = AutocompleteAdapter(context!!, AutocompleteList().getFromLocal(context!!))
         autoCompleteTextView.setAdapter(adapter)
         autoCompleteTextView.threshold = 1
